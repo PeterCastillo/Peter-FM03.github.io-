@@ -135,7 +135,8 @@
 }
 
 .nav__list__element a:hover {
-    color: var(--Black);
+    color: var(--Very-vark-blue);
+    font-weight: bold;
 }
 
 @media screen and (min-width:750px) {
@@ -199,7 +200,7 @@
     }
 
     .nav__list__element:hover > .back{
-        color: black;
+        color: var(--Very-vark-blue);
     }
 
 
