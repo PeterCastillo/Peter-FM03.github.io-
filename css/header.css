@@ -201,6 +201,7 @@
 
     .nav__list__element:hover > .back{
         color: var(--Very-vark-blue);
+        font-weight: normal;
     }
 
 
