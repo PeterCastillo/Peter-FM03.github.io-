@@ -78,8 +78,7 @@
     background-color: var(--Lightgrayish-blue);
 }
 
-.plus,
-.less,
+.btn,
 .count {
     width: 3rem;
     display: flex;
