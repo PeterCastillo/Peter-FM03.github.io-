@@ -18,9 +18,12 @@ imgsmall.forEach(element => {
      element.style.opacity = "0.5";
      let smallimg = element.firstElementChild;
      let bigimgnew = smallimg.cloneNode();
-     let bigimg = imgbig.firstElementChild;
-     imgbig.replaceChild(bigimgnew,bigimg);
+     let bigimg = imgbig.children;
+     imgbig.replaceChild(bigimgnew,bigimg[0]);
     });
 });
+
+
+
 
 
