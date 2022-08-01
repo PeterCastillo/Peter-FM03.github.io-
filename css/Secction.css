@@ -128,7 +128,21 @@
 }
 .secction__product--small--element {
     max-width: 4.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    border-radius: 0.7rem;
     border: solid 2px transparent;
+    box-sizing: none;
+}
+
+.secction__product--small--element--active {
+    opacity: 0.5;
+    border: solid 4px var(--Orange);
+}
+
+.secction__product--small--element:hover {
+    border: solid 4px var(--Orange);
+    opacity: 0.5;
 }
 
 .secction__product--small--element img,
