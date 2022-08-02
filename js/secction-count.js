@@ -1,6 +1,5 @@
 const btn = document.querySelectorAll('.btn');
 const count = document.querySelector('.count');
-const frag = document.createDocumentFragment();
 
 let contador = 0;
 
@@ -12,15 +11,40 @@ btn.forEach(element => {
         }
         else if (element === btn[0]) {
             contador--;
-            if(contador ===0) {
-                console.log('hola')
+            if(contador < 0) {
+                contador = 0;
             }
             count.innerHTML= contador;
         };
     });
 });
 
+const addcart = document.querySelector('.secction__about__selection-addcart');
+const cartcounter = document.querySelector('.counter')
 
+let carrito = parseInt(cartcounter.innerHTML);
+
+addcart.addEventListener('click', () => {
+    let añadido = parseInt(count.innerHTML);
+    if(añadido > 0) {
+        carrito = carrito + añadido; 
+        cartcounter.innerHTML= carrito
+    }; 
+    if(cartcounter.style.display = "none" && cartcounter.innerHTML > 0){
+        cartcounter.style.display = "block"
+    }
+
+});
+
+
+
+
+
+// let span = document.createElement('span');
+//     let cartcount = count.innerHTML;
+//     span.innerHTML = cartcount
+//     frag.appendChild(span); 
+//     cart.appendChild(frag);
 
 
 
