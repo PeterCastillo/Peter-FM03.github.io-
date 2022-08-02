@@ -80,8 +80,19 @@
     display: none;
 }
 
-.nav__client  img{
+.nav__client > img{
     cursor: pointer;
+    border: solid 2px transparent;
+}
+
+.nav__client > img:hover {
+    border: solid 2px var(--Orange);
+    border-radius: 50%;
+}
+
+.nav__client-active {
+    border: solid 2px var(--Orange);
+    border-radius: 50%;
 }
 
 .nav__list {
@@ -99,7 +110,6 @@
     display: block;
     /* animation: showFeatures 0.3s ease; Tambien se puede poner aqui*/
 }
-
 
 @keyframes showFeatures {
     0% {
@@ -139,8 +149,59 @@
 .nav__client__icon {
     padding: 0.4rem;
     display: flex;
+    position: relative;
+    cursor:pointer;
 }
 
+.counter {
+    position: absolute;
+    z-index: 25;
+    top: 0;
+    right: 0;
+    background-color: var(--Orange);
+    padding: 0.1rem;
+    border-radius: 30%;
+    font-size: 10px;
+    color: var(--White);
+}
+
+.cart {
+    width: 13rem;
+    background-color: var(--White);
+    height: 10rem;
+    position: fixed;
+    top: 3rem;
+    box-shadow: 0px 10px 44px -7px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 0px 10px 44px -7px rgba(0,0,0,0.62);
+    -moz-box-shadow: 0px 10px 44px -7px rgba(0,0,0,0.62);
+    border-radius: 0.4rem;
+    display: none;
+    font-size: 14px;
+}
+
+.cart-toogle {
+    display: block;
+}
+
+.cart__name {
+    height: 30%;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px var(--Grayishblue);
+    padding-left: 1rem
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    color: var(--Grayishblue);
+    font-weight: bolder;
+}
 
 @media screen and (min-width:750px) {
     .nav__logo--img--menu,
@@ -207,20 +268,4 @@
         font-weight: normal;
     }
 
-    .nav__client__icon {
-        position: relative;
-    }
-    
-    .counter {
-        position: absolute;
-        z-index: 25;
-        top: 0;
-        right: 0;
-        background-color: var(--Orange);
-        padding: 0.1rem;
-        border-radius: 30%;
-        font-size: 10px;
-        color: var(--White);
-        display: none;
-    }
 }

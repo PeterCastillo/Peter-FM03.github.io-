@@ -30,14 +30,16 @@ addcart.addEventListener('click', () => {
         carrito = carrito + añadido; 
         cartcounter.innerHTML= carrito
     }; 
-    if(cartcounter.style.display = "none" && cartcounter.innerHTML > 0){
+    if (cartcounter.innerHTML > 0) {
         cartcounter.style.display = "block"
     }
-
 });
-
-
-
+     
+window.addEventListener('load', function() {
+    if (cartcounter.innerHTML == 0) {
+        cartcounter.style.display = "none";
+    };
+});
 
 
 // let span = document.createElement('span');
@@ -46,6 +48,13 @@ addcart.addEventListener('click', () => {
 //     frag.appendChild(span); 
 //     cart.appendChild(frag);
 
+const cart = document.querySelector('.cart');
+const cartshow = document.querySelectorAll('.cart-show')
 
+cartshow.forEach(element => {
+    element.addEventListener('click', () => {
+        cart.classList.toggle('cart-toogle');
+    });
+});
 
 
