@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/Secction.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -36,36 +37,74 @@
         <div class="black back"></div>
       </div>
       <div class="nav__client">
-        <img class="nav__client__icon" src="images/icon-cart.svg" alt="cart">
+        <div class="nav__client__icon">
+          <span class="counter">0</span>
+          <img src="images/icon-cart.svg" alt="cart">
+        </div>
         <img class="nav__client__img" src="images/image-avatar.png" alt="avatar">
       </div>
     </nav>
   </header>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <main class="container__secction">
+    <section class="secction">
+      <div class="secction__product">
+        <div class="secction__product--big">
+          <img src="images/image-product-1.jpg" alt="">
+        </div>
+        <div class="secction__product--small">
+          <div class="secction__product--small--element secction__product--small--element--active">
+            <img src="images/image-product-1.jpg" alt="">
+          </div>
+          <div class="secction__product--small--element">
+            <img src="images/image-product-2.jpg" alt="">
+          </div>
+          <div class="secction__product--small--element">
+            <img src="images/image-product-3.jpg" alt="">
+          </div>
+          <div class="secction__product--small--element">
+            <img src="images/image-product-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="secction__about">
+        <span class="secction__about__name">SNEAKERS COMPANY</span>
+        <span class="secction__about__content">Fall Limited Edition Sneakers</span>
+        <p class="secction__about__review">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="secction__about__value">
+          <div class="secction__about__value__price">
+            <span class="secction__about__value__price--price">$125.00</span>
+            <span class="secction__about__value__price--discount">50%</span>
+          </div>
+          <span class="secction__about__value__exprice"><strike>$250.00</strike></span>
+        </div>
+        <div class="secction__about__selection">
+          <div class="secction__about__selection-count">
+            <div class="btn"><img src="images/icon-minus.svg" alt="delete"></div>
+            <span class="count">0</span>
+            <div class="btn"><img src="images/icon-plus.svg" alt=""></div>
+          </div>
+          <div class="secction__about__selection-addcart">
+            <img src="images/icon-cart.svg" alt="">
+            <span class="addcart">Add to cart</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  Sneaker Company
 
-  Fall Limited Edition Sneakers
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="js/secction-count.js"></script>
+  <script src="js/secction-imgs-dsktp.js"></script>
   <script src="js/header.js"></script>
 </body>
 </html>
