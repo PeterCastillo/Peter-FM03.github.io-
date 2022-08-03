@@ -148,3 +148,18 @@
 .secction__product--big img {
     border-radius: 0.5rem;
 }
+
+@media screen and (max-width:750px) {
+    .secction {
+        max-width: 900px;
+        height: 900px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .attribution {
+        margin-top: 27rem;
+    }
+}
