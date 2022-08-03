@@ -151,15 +151,84 @@
 
 @media screen and (max-width:750px) {
     .secction {
-        max-width: 900px;
-        height: 900px;
+        width: 100vw;
+        height: 100vh;
         margin: auto;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 1rem;
     }
 
-    .attribution {
-        margin-top: 27rem;
+    .secction__about {
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    .secction__about__selection {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .secction__about__selection-count {
+        display: flex;
+        max-width: 100%;
+        border-radius: 0.4rem;
+    }
+
+    .btn,
+    .count {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    padding: 0.5rem 2.5rem;
+    }
+
+    .secction__about__value {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .secction__about__name {
+        align-self: center;
+    }
+
+    .secction__about__content  {
+        text-align: center;
+    }
+
+    .secction__product--small {
+        display: none;
+    }
+
+    .secction__product {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+        background-color: red;
+    }
+
+    .secction__product--big {
+        min-width: 100%;
+        height: 100%;
+        background-color: royalblue;
+    }
+    
+    .secction__product--big  img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0px;
     }
 }
